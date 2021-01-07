@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="141.138" height="88" viewBox="0 0 141.138 88">
+  <g id="Group_564" data-name="Group 564" transform="translate(0.196 0.583)">
+    <g id="Group_559" data-name="Group 559" transform="translate(0.317 0)">
+      <rect id="Rectangle" width="140" height="87" rx="8" stroke-width="1" fill="#fafbfd" stroke="rgba(112,112,112,0.5)" transform="translate(-0.014 -0.083)"/>
+    </g>
+    <text id="Lorem_ipsum" data-name="Lorem ipsum" transform="translate(6.305 10.917)" fill="#414d55" font-size="8" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Lorem ipsum</tspan></text>
+    <text id="Lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_sed_do_eiusmod_tempor_incididunt_ut_labore_et_dolore_magna_aliqua._Ut_enim_ad_minim_veniam_quis_nostrud_exercitation_ullamco_laboris_nisi_ut_aliquip_ex_ea_commodo_consequat._Duis_aute_irure_dolor_in" data-name="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in" transform="translate(6.305 21.917)" fill="#414d55" font-size="10" font-family="Roboto-Regular, Roboto"><tspan x="0" y="10">Lorem ipsum dolor sit amet, </tspan><tspan x="0" y="22">consectetur adipiscing elit, </tspan><tspan x="0" y="34">sed do eiusmod tempor </tspan><tspan x="0" y="46">incididunt ut labore et </tspan></text>
+    <line id="Line_10" data-name="Line 10" x2="140.941" transform="translate(0.001 16.531)" fill="none" stroke="rgba(112,112,112,0.5)" stroke-width="1"/>
+  </g>
+</svg>

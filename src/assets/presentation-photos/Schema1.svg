@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="141.044" height="86" viewBox="0 0 141.044 86">
+  <g id="Group_567" data-name="Group 567" transform="translate(0.013 0.5)">
+    <path id="Rectangle" d="M8,0H132a8,8,0,0,1,8,8V77a8,8,0,0,1-8,8H8a8,8,0,0,1-8-8V8A8,8,0,0,1,8,0Z" transform="translate(0.487)" fill="#fafbfd" stroke="#c7c8c9" stroke-width="1"/>
+    <text id="Lorem_ipsum" data-name="Lorem ipsum" transform="translate(6.487 11)" fill="#414d55" font-size="8" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Lorem ipsum</tspan></text>
+    <text id="Lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_sed_do_eiusmod_tempor_incididunt_ut_labore_et_dolore_magna_aliqua._Ut_enim_ad_minim_veniam_quis_nostrud_exercitation_ullamco_laboris_nisi_ut_aliquip_ex_ea_commodo_consequat._Duis_aute_irure_dolor_in" data-name="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in" transform="translate(6.487 22)" fill="#414d55" font-size="10" font-family="Roboto-Regular, Roboto"><tspan x="0" y="10">Lorem </tspan><tspan x="0" y="22">ipsum dolor </tspan><tspan x="0" y="34">sit amet, </tspan><tspan x="0" y="46">consectetur </tspan></text>
+    <text id="Şəkil_əlavə_et" data-name="Şəkil əlavə et" transform="translate(98.487 42)" fill="#414d55" font-size="3" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Şəkil əlavə et</tspan></text>
+    <text id="Video_əlavə_et" data-name="Video əlavə et" transform="translate(98.487 48)" fill="#414d55" font-size="3" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Video əlavə et</tspan></text>
+    <text id="Fayl_əlavə_et" data-name="Fayl əlavə et" transform="translate(98.487 55)" fill="#414d55" font-size="3" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Fayl əlavə et</tspan></text>
+    <text id="image" transform="translate(93.487 42)" fill="#2662f0" font-size="3" font-family="FontAwesome5Pro-Regular, 'Font Awesome 5 Pro'"><tspan x="0" y="0">image</tspan></text>
+    <text id="video" transform="translate(93.487 48)" fill="#2662f0" font-size="3" font-family="FontAwesome5Pro-Regular, 'Font Awesome 5 Pro'"><tspan x="0" y="0">video</tspan></text>
+    <text id="file" transform="translate(93.487 55)" fill="#2662f0" font-size="3" font-family="FontAwesome5Pro-Regular, 'Font Awesome 5 Pro'"><tspan x="0" y="0">file</tspan></text>
+    <line id="Line_4" data-name="Line 4" x2="140.941" transform="translate(0.09 16.615)" fill="none" stroke="rgba(112,112,112,0.5)" stroke-width="1"/>
+    <line id="Line_5" data-name="Line 5" y2="67" transform="translate(70.487 17)" fill="none" stroke="rgba(112,112,112,0.5)" stroke-width="1"/>
+  </g>
+</svg>

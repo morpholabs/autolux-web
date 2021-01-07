@@ -1,0 +1,4 @@
+<svg id="Buttons_Round" data-name="Buttons/Round" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+  <rect id="Rectangle" width="21" height="20" rx="8" fill="none"/>
+  <text id="bell" fill="#636d73" font-size="16" font-family="FontAwesome5Pro-Light, 'Font Awesome 5 Pro'" font-weight="300"><tspan x="3.5" y="14">bell</tspan></text>
+</svg>
