@@ -13,11 +13,11 @@ export const useStyles = makeStyles(() => ({
     overflow: "auto",
   },
   container: {
-    minWidth: "600px",
+    // minWidth: "600px",
     padding: 0,
-    "& .MuiGrid-spacing-xs-1": {
-      width: "calc(100% + 3px)",
-    },
+    // "& .MuiGrid-spacing-xs-1": {
+    //   width: "calc(100% + 3px)",
+    // },
   },
 }));
 
@@ -25,8 +25,8 @@ const App = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <main className={classes.content}>
+    <div>
+      <main>
         <Container maxWidth="xl" className={classes.container}>
           <AppRouter />
         </Container>
