@@ -193,10 +193,10 @@ export const useStyles = makeStyles((theme) => {
             backgroundPosition: "center center",
             color: "white",
             [theme.breakpoints.down("xs")]: {
-                minHeight: "540px",
+                minHeight: "450px",
             },
-            [theme.breakpoints.down("sm")]: {
-                minHeight: "560px",
+            [theme.breakpoints.only("sm")]: {
+                minHeight: "650px",
             }
         },
         leftSide: {
