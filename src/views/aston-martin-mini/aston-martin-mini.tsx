@@ -79,8 +79,8 @@ export const AstonMartinMini = () => {
             </div>
           </Grid>
 
-          <Grid item xs={12} md={6} lg={7}>
-            <Grid item xs={12} className={classes.secondDiv}>
+          <Grid item xs={12} md={6} lg={7} className={classes.secondDiv}>
+            <Grid item xs={12} className={classes.forTest} >
               <Typography className={classes.shortInfo}>QISA MƏLUMAT</Typography>
               <Typography color="textSecondary" className={classes.longInfo}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <span className={classes.loremText}> exercitation ullamco laboris nisi ut
@@ -97,12 +97,12 @@ export const AstonMartinMini = () => {
             <Grid item xs={12} className={classes.fifthDiv}>
               <Grid item xs={12} lg={6} className={clsx(classes.thirdDiv,classes.theSameClass3)}>
                 <Typography className={classes.interyer}>INTERYER</Typography>
-                <Typography className={classes.textLorem}>Lorem ipsum dolor amet, consectetur adipiscing elit,</Typography>
+                <Typography className={classes.textLorem}>Lorem ipsum dolor sit amet <span className={classes.loremText1}>, consectetur adipiscing elit,</span></Typography>
                 <a href="" className={classes.thirdBtn}>DAHA ÇOX</a>
               </Grid>
               <Grid item xs={12} lg={6} className={clsx(classes.fourthDiv,classes.theSameClass3)}>
                 <Typography className={classes.interyer}>EKSTERYER</Typography>
-                <Typography className={classes.textLorem}>Lorem ipsum dolor amet, consectetur adipiscing elit,</Typography>
+                <Typography className={classes.textLorem}>Lorem ipsum dolor sit amet<span className={classes.loremText1}>, consectetur adipiscing elit,</span></Typography>
                 <a href="" className={classes.thirdBtn}>DAHA ÇOX</a>
               </Grid>
             </Grid>
@@ -135,8 +135,8 @@ export const AstonMartinMini = () => {
               {/* <Button >DAHA ÇOX</Button> */}
             </div>
           </Grid>
-          <Grid item xs={12} md={6} lg={7} >
-            <Grid item xs={12} className={classes.secondDiv}>
+          <Grid item xs={12} md={6} lg={7} className={classes.secondDiv} >
+            <Grid item xs={12} className={classes.forTest}>
               <Typography className={classes.shortInfo}>QISA MƏLUMAT</Typography>
               <Typography color="textSecondary" className={classes.longInfo}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <span className={classes.loremText}>exercitation ullamco laboris nisi ut
@@ -153,12 +153,12 @@ export const AstonMartinMini = () => {
             <Grid item xs={12} className={classes.fifthDiv}>
               <Grid item xs={12} lg={6} className={clsx(classes.thirdDiv1,classes.theSameClass3)}>
                 <Typography className={classes.interyer}>INTERYER</Typography>
-                <Typography className={classes.textLorem}>Lorem ipsum dolor amet, consectetur adipiscing elit,</Typography>
+                <Typography className={classes.textLorem}>Lorem ipsum dolor sit amet <span className={classes.loremText1}>, consectetur adipiscing elit,</span></Typography>
                 <a href="" className={classes.thirdBtn}>DAHA ÇOX</a>
               </Grid>
               <Grid item xs={12} lg={6} className={clsx(classes.fourthDiv1,classes.theSameClass3)}>
                 <Typography className={classes.interyer}>EKSTERYER</Typography>
-                <Typography className={classes.textLorem}>Lorem ipsum dolor amet, consectetur adipiscing elit,</Typography>
+                <Typography className={classes.textLorem}>Lorem ipsum dolor sit amet<span className={classes.loremText1}>, consectetur adipiscing elit,</span></Typography>
                 <a href="" className={classes.thirdBtn}>DAHA ÇOX</a>
               </Grid>
             </Grid>
@@ -179,11 +179,11 @@ export const AstonMartinMini = () => {
 
         <Grid container xs={12} className={clsx(classes.section, classes.sixthContainer)} >
           {/* <div className={classes.seventhDiv}></div> */}
-          <Grid item sm={12} lg={5} className={classes.eighthDiv}>
+          <Grid item xs={12} sm={12} md={5} lg={5} className={classes.eighthDiv}>
             <div className={classes.eleventhDiv}></div>
             <Typography className={classes.sixthTypo}>ƏLAQƏ</Typography>
             <Typography className={classes.seventhTypo}>Lorem ipsum dolor sit amet, consectetur <br />adipiscing elit,sed <span className={classes.loremText}> do eiusmod tempor</span></Typography>
-            <Grid item container xs={12} sm={12}  className={classes.ninthDiv}>
+            <Grid item container xs={12} sm={12} md={12} className={classes.ninthDiv}>
               <TextField label="AD" variant="outlined" className={classes.firstInput} />
               <TextField label="SOYAD" variant="outlined" className={classes.firstInput} />
               <TextField label="EMAİL" variant="outlined" className={classes.firstInput} />

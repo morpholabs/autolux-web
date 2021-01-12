@@ -17,7 +17,7 @@ export const useStyles = makeStyles((theme) => {
             minHeight: "896px",
             [theme.breakpoints.down("xs")]: {
                 minHeight: "786px",
-                width: "412px",
+                width: "100%",
             }
         },
         theSameClasses1: {
@@ -193,10 +193,10 @@ export const useStyles = makeStyles((theme) => {
             backgroundPosition: "center center",
             color: "white",
             [theme.breakpoints.down("xs")]: {
-                minHeight: "540px",
+                minHeight: "450px",
             },
             [theme.breakpoints.only("sm")]: {
-                minHeight: "1000px",
+                minHeight: "650px",
             }
         },
         leftSide: {
@@ -213,7 +213,10 @@ export const useStyles = makeStyles((theme) => {
         },
         secondContainer: {
             minHeight: "896px",
-            display: "flex"
+            display: "flex",
+            [theme.breakpoints.only("md")]: {
+                minHeight: "874px",
+            }
         },
         secondBtn: {
             color: "white",
@@ -232,8 +235,8 @@ export const useStyles = makeStyles((theme) => {
             [theme.breakpoints.down("xs")]: {
                 fontSize: "20px",
             },
-            [theme.breakpoints.only("sm")]: {
-                fontSize: "35px",
+            [theme.breakpoints.down("sm")]: {
+                fontSize: "25px",
             }
         },
         thirdTypo: {
@@ -255,18 +258,36 @@ export const useStyles = makeStyles((theme) => {
             marginTop: "5%"
         },
         secondDiv: {
+            minHeight:"25vh"
+            // padding: "10%",
+            // [theme.breakpoints.down("sm")]: {
+            //     padding: "5%",
+            //     minHeight: "60vh"
+            // },
+            // [theme.breakpoints.down("xs")]: {
+            //     padding: "10%",
+            //     minHeight: "60vh"
+            // },
+            // [theme.breakpoints.down("md")]: {
+            //     padding: "7%",
+            //     //minHeight: "60vh"
+            // },
+        },
+        forTest:{
+          padding: "8%",
+          [theme.breakpoints.down("xl")]: {
             padding: "10%",
-            [theme.breakpoints.only("sm")]: {
-                padding: "5%",
-                minHeight: "60vh"
-            },
-            [theme.breakpoints.down("xs")]: {
-                padding: "10%",
-                minHeight: "60vh"
-            },
+
+        },
+
         },
         loremText: {
             [theme.breakpoints.down("sm")]: {
+                display: "none"
+            },
+        },
+        loremText1:{
+            [theme.breakpoints.down("xs")]: {
                 display: "none"
             },
         },
@@ -290,15 +311,17 @@ export const useStyles = makeStyles((theme) => {
             color: "white",
             paddingTop: "3%",
             paddingLeft: "3%",
-            display: "grid",
-            [theme.breakpoints.down("xs")]: {
-                width: "412px",
-                minHeight: "449px",
-                paddingTop: "13%"
-            },
-            [theme.breakpoints.only("sm")]: {
+            //display: "grid",
+            // [theme.breakpoints.down("xs")]: {
+            //     width: "100%",
+            //     minHeight: "162vh",
+            //     paddingTop: "13%"
+            // },
+            [theme.breakpoints.down("sm")]: {
                 width: "100%",
-                minHeight: "90vh",
+                minHeight: "60vh",
+                paddingTop: "20px",
+                paddingLeft: "40px",
             }
         },
         thirdDiv: {
@@ -306,6 +329,10 @@ export const useStyles = makeStyles((theme) => {
             backgroundPosition: "center center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
+            height:"340px",
+            [theme.breakpoints.down("md")]: {
+                height:"200px",
+            }
 
         },
         thirdDiv1: {
@@ -313,7 +340,10 @@ export const useStyles = makeStyles((theme) => {
             backgroundPosition: "center center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
-
+            height:"340px",
+            [theme.breakpoints.down("md")]: {
+                height:"200px",
+            }
         },
         // theSameClass4:{
         //     width: "50%",
@@ -339,39 +369,58 @@ export const useStyles = makeStyles((theme) => {
             backgroundPosition: "center center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
-        },
+            height:"340px",
+            [theme.breakpoints.down("md")]: {
+                height:"200px",
+            }        },
         fourthDiv1: {
             background: `linear-gradient( rgba(0,0,0,0), rgba(0,0,0,1)),url(${require("assets/aston-martini/vantageEksteryer.png")})`,
             backgroundPosition: "center center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
-        },
+            height:"340px",
+            [theme.breakpoints.down("md")]: {
+                height:"200px",
+            }        },
         fifthDiv: {
             display: "flex",
-            height: "38%",
+            // height: "38%",
+            // [theme.breakpoints.only("md")]: {
+            //     height: "23%",
+            // },
             [theme.breakpoints.down("sm")]: {
                 display: "grid"
             }
         },
         thirdBtn: {
             color: "white",
-            fontSize: "15px"
+            fontSize: "15px",
+            [theme.breakpoints.only("md")]: {
+                fontSize: "9px",
+            },
         },
         interyer: {
             fontSize: "25px",
             fontWeight: 500
         },
         textLorem: {
-            marginTop: "20%",
+            marginTop: "28%",
+            marginBottom:"8%",
             color: "#CFCECD",
-            [theme.breakpoints.only("sm")]: {
-            
-                marginTop: "35%"
+            [theme.breakpoints.only("md")]: {
+             marginTop:"40px",
+             fontSize:"12px"
             },
-            [theme.breakpoints.down("xs")]: {
-                fontSize: "small",
-                marginTop: "50%"
-            }
+            [theme.breakpoints.down("sm")]: {
+            
+                marginTop: "175px",
+                fontSize:"17px",
+                marginBottom:"25px"
+            },
+            // [theme.breakpoints.down("xs")]: {
+            //     fontSize: "small",
+            //     marginTop: "50%"
+            // }
 
         },
   
@@ -424,6 +473,10 @@ export const useStyles = makeStyles((theme) => {
             [theme.breakpoints.down("sm")]: {
                 display: "flex",
                 justifyContent: "center"
+            },
+            [theme.breakpoints.down("xs")]: {
+                display: "flex",
+                justifyContent: "center"
             }
         },
         seventhTypo: {
@@ -447,8 +500,8 @@ export const useStyles = makeStyles((theme) => {
             '& .MuiInputLabel-root': {
                 color: "white"
             },
-            [theme.breakpoints.down("xs")]: {
-                width: "85%",
+            [theme.breakpoints.only("xs")]: {
+                width: "80%",
                 justifySelf: "center",
                 marginTop: "3%"
             },
@@ -467,7 +520,11 @@ export const useStyles = makeStyles((theme) => {
             width: "100%",
             marginTop: "2%",
             display: "grid",
-            minHeight: "38vh"
+            minHeight: "38vh",
+            [theme.breakpoints.down("sm")]: {
+                width: "100%",
+                
+            }
         },
         fourthBtn: {
             color: "white",
@@ -476,7 +533,7 @@ export const useStyles = makeStyles((theme) => {
             borderRadius: "0",
             borderColor: "white",
             marginTop: "5%",
-            [theme.breakpoints.only("sm")]: {
+            [theme.breakpoints.down("sm")]: {
                 width: "35%",
                 justifySelf: "center"
             },
