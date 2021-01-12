@@ -1,17 +1,4 @@
 import { makeStyles } from '@material-ui/core/styles';
-import FirstPicture from '../../assets/aston-martini/firstPicture.png';
-import SecondPicture from '../../assets/aston-martini/secondFullPicture.png';
-import ThirdPicture from '../../assets/aston-martini/thirdFullPicture.png';
-import FourthPicture from '../../assets/aston-martini/fourthFullPicture.png';
-import LeftSidePicture from '../../assets/aston-martini/leftSidePicture.png';
-import BlackCar from '../../assets/aston-martini/blackCar.png';
-import InteriorPicture from '../../assets/aston-martini/interiorPicture.png';
-import GreyCar from '../../assets/aston-martini/greyCar.png';
-import VantageCoupe from '../../assets/aston-martini/vantageCoupe.png';
-import VantageEksteryer from '../../assets/aston-martini/vantageEksteryer.png';
-import MobileSecondPicture from '../../assets/aston-martini/mobileSecondFullPicture.png';
-import VantageWhite from '../../assets/aston-martini/vantageWhite.png';
-import BackSide from '../../assets/aston-martini/backSide.png';
 
 
 export const useStyles = makeStyles((theme) => {
@@ -22,63 +9,67 @@ export const useStyles = makeStyles((theme) => {
             position: "relative"
         },
         firstContainer: {
-            background: `url(${FirstPicture})`,
+            background: `url(${require("assets/aston-martini/firstPicture.png")})`,
             backgroundPosition: "center center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
-           // backgroundAttachment:"fixed",
             width: "100%",
             minHeight: "896px",
-            [theme.breakpoints.only("xs")]: {
-                minHeight: "90vh",
+            [theme.breakpoints.down("xs")]: {
+                minHeight: "786px",
+                width: "412px",
             }
+        },
+        theSameClasses1: {
+            backgroundPosition: "center center",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            display: "flex",
+            justifyContent: "center",
+            alignContent: "center",
         },
         thirdContainer: {
-            background: `url(${SecondPicture})`,
+            background: `url(${require("assets/aston-martini/secondFullPicture.png")})`,
             backgroundPosition: "center center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             display: "flex",
             justifyContent: "center",
             alignContent: "center",
-            [theme.breakpoints.only("sm")]: {
+            [theme.breakpoints.down("xs")]: {
+                background: `url(${require("assets/aston-martini/mobileSecondFullPicture.png")})`,
                 backgroundPosition: "center center",
-            },
-            [theme.breakpoints.only("xs")]: {
-                background: `url(${MobileSecondPicture})`,
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
-                backgroundPosition: "center center",
-                minHeight: "70vh"
+                minHeight: "600px"
             }
-
         },
         fifthContainer: {
-            background: `url(${ThirdPicture})`,
+            background: `url(${require("assets/aston-martini/thirdFullPicture.png")})`,
             backgroundPosition: "center center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             display: "flex",
             justifyContent: "center",
             alignContent: "center",
-            [theme.breakpoints.only("xs")]: {
+            [theme.breakpoints.down("xs")]: {
+                background: `url(${require("assets/aston-martini/vantageWhite.png")})`,
                 backgroundPosition: "center center",
-                background: `url(${VantageWhite})`,
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
-                minHeight: "70vh"
+                minHeight: "600px"
             },
 
         },
         sixthContainer: {
-            background: `url(${FourthPicture})`,
+            background: `url(${require("assets/aston-martini/fourthFullPicture.png")})`,
             backgroundPosition: "center center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             justifyContent: "flex-end",
-            [theme.breakpoints.only("xs")]: {
+            [theme.breakpoints.down("xs")]: {
                 backgroundPosition: "center center",
-                background: `url(${BackSide})`,
+                background: `url(${require("assets/aston-martini/backSide.png")})`,
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
             },
@@ -115,11 +106,16 @@ export const useStyles = makeStyles((theme) => {
         instagramIcon: {
             position: "absolute",
             right: "14%",
-            paddingTop: "7px"
+            paddingTop: "7px",
+
         },
         instagram: {
             color: "white",
-            fontSize: "28px"
+            fontSize: "28px",
+            [theme.breakpoints.down("xs")]: {
+
+                fontSize: "20px"
+            }
         },
         menuIcon: {
             width: "30px",
@@ -137,6 +133,7 @@ export const useStyles = makeStyles((theme) => {
         firstWord: {
             fontSize: "25px",
             fontWeight: 200,
+            color: "#CFCECD",
             [theme.breakpoints.down("sm")]: {
                 display: "flex",
                 justifyContent: "center",
@@ -163,6 +160,7 @@ export const useStyles = makeStyles((theme) => {
             }
         },
         eighthTypo: {
+            color: "#CFCECD",
             '&.MuiTypography-body1': {
                 [theme.breakpoints.down("sm")]: {
                     textAlign: "center",
@@ -188,37 +186,34 @@ export const useStyles = makeStyles((theme) => {
                 marginTop: "5%"
             }
         },
-        leftSide: {
-            background: `url(${LeftSidePicture})`,
+        theSameClass: {
             width: "37%",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundPosition: "center center",
             color: "white",
-            [theme.breakpoints.only("xs")]: {
+            [theme.breakpoints.down("xs")]: {
                 minHeight: "540px",
             },
             [theme.breakpoints.only("sm")]: {
                 minHeight: "1000px",
             }
         },
-        leftSide1: {
-            background: `url(${GreyCar})`,
-            width: "37%",
+        leftSide: {
+            background: `linear-gradient( rgba(0,0,0,0), rgba(0,0,0,1)),url(${require("assets/aston-martini/leftSidePicture.png")})`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundPosition: "center center",
-            color: "white",
-            [theme.breakpoints.only("xs")]: {
-                minHeight: "540px",
-            },
-            [theme.breakpoints.only("sm")]: {
-                minHeight: "1000px",
-            }
+        },
+        leftSide1: {
+            background: `linear-gradient( rgba(0,0,0,0), rgba(0,0,0,1)),url(${require("assets/aston-martini/greyCar.png")})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "center center",
         },
         secondContainer: {
             minHeight: "896px",
-            display:"flex"
+            display: "flex"
         },
         secondBtn: {
             color: "white",
@@ -234,7 +229,7 @@ export const useStyles = makeStyles((theme) => {
         secondTypo: {
             fontSize: "35px",
             fontWeight: 300,
-            [theme.breakpoints.only("xs")]: {
+            [theme.breakpoints.down("xs")]: {
                 fontSize: "20px",
             },
             [theme.breakpoints.only("sm")]: {
@@ -244,7 +239,7 @@ export const useStyles = makeStyles((theme) => {
         thirdTypo: {
             fontSize: "80px",
             fontWeight: 900,
-            [theme.breakpoints.only("xs")]: {
+            [theme.breakpoints.down("xs")]: {
                 fontSize: "60px"
             }
         },
@@ -259,17 +254,13 @@ export const useStyles = makeStyles((theme) => {
             fontWeight: 700,
             marginTop: "5%"
         },
-        rightSide: {
-            //width: "63%"
-
-        },
         secondDiv: {
             padding: "10%",
             [theme.breakpoints.only("sm")]: {
                 padding: "5%",
-                minHeight:"60vh"
+                minHeight: "60vh"
             },
-            [theme.breakpoints.only("xs")]: {
+            [theme.breakpoints.down("xs")]: {
                 padding: "10%",
                 minHeight: "60vh"
             },
@@ -290,29 +281,8 @@ export const useStyles = makeStyles((theme) => {
                 marginBottom: "5%",
             }
         },
-        thirdDiv: {
-            background: `url(${BlackCar})`,
-            width: "50%",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundPosition: "center center",
-            color: "white",
-            paddingTop: "3%",
-            paddingLeft: "3%",
-            display: "grid",
-            [theme.breakpoints.only("xs")]: {
-                width: "100%",
-                minHeight: "59vh",
-                paddingTop: "13%"
-            },
-            [theme.breakpoints.only("sm")]: {
-                width: "100%",
-                minHeight: "100vh",
-            }
 
-        },
-        thirdDiv1: {
-            background: `url(${VantageCoupe})`,
+        theSameClass3: {
             width: "50%",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
@@ -321,65 +291,64 @@ export const useStyles = makeStyles((theme) => {
             paddingTop: "3%",
             paddingLeft: "3%",
             display: "grid",
-            [theme.breakpoints.only("xs")]: {
-                width: "100%",
-                minHeight: "59vh",
+            [theme.breakpoints.down("xs")]: {
+                width: "412px",
+                minHeight: "449px",
                 paddingTop: "13%"
             },
             [theme.breakpoints.only("sm")]: {
                 width: "100%",
                 minHeight: "90vh",
             }
-
         },
-        fourthDiv: {
-            background: `url(${InteriorPicture})`,
-            width: "50%",
+        thirdDiv: {
+            background: `linear-gradient( rgba(0,0,0,0), rgba(0,0,0,1)),url(${require("assets/aston-martini/blackCar.png")})`,
+            backgroundPosition: "center center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
-            backgroundPosition: "center center",
-           // minHeight: "68vh",
-            color: "white",
-            paddingTop: "3%",
-            paddingLeft: "3%",
-            display: "grid",
-            [theme.breakpoints.only("xs")]: {
-                width: "100%",
-                minHeight: "59vh",
-                paddingTop: "13%"
-            },
-            [theme.breakpoints.only("sm")]: {
-                width: "100%",
-                minHeight: "100vh",
-            }
 
+        },
+        thirdDiv1: {
+            background: `linear-gradient( rgba(0,0,0,0), rgba(0,0,0,1)),url(${require("assets/aston-martini/vantageCoupe.png")})`,
+            backgroundPosition: "center center",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+
+        },
+        // theSameClass4:{
+        //     width: "50%",
+        //     backgroundRepeat: "no-repeat",
+        //     backgroundSize: "cover",
+        //     backgroundPosition: "center center",
+        //     color: "white",
+        //     paddingTop: "3%",
+        //     paddingLeft: "3%",
+        //     display: "grid",
+        //     [theme.breakpoints.down("xs")]: {
+        //         width: "100%",
+        //         minHeight: "59vh",
+        //         paddingTop: "13%"
+        //     },
+        //     [theme.breakpoints.only("sm")]: {
+        //         width: "100%",
+        //         minHeight: "100vh",
+        //     }
+        // },
+        fourthDiv: {
+            background: `linear-gradient( rgba(0,0,0,0), rgba(0,0,0,1)),url(${require("assets/aston-martini/interiorPicture.png")})`,
+            backgroundPosition: "center center",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
         },
         fourthDiv1: {
-            background: `url(${VantageEksteryer})`,
+            background: `linear-gradient( rgba(0,0,0,0), rgba(0,0,0,1)),url(${require("assets/aston-martini/vantageEksteryer.png")})`,
             backgroundPosition: "center center",
-            width: "50%",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
-           // minHeight: "68vh",
-            color: "white",
-            paddingTop: "3%",
-            paddingLeft: "3%",
-            display: "grid",
-            [theme.breakpoints.only("xs")]: {
-                width: "100%",
-                minHeight: "59vh",
-                paddingTop: "13%"
-            },
-            [theme.breakpoints.only("sm")]: {
-                width: "100%",
-                minHeight: "100vh",
-            }
-
         },
         fifthDiv: {
             display: "flex",
             height: "38%",
-           //height:"auto",
             [theme.breakpoints.down("sm")]: {
                 display: "grid"
             }
@@ -394,28 +363,49 @@ export const useStyles = makeStyles((theme) => {
         },
         textLorem: {
             marginTop: "20%",
-            [theme.breakpoints.only("xs")]: {
-                fontSize: "small"
+            color: "#CFCECD",
+            [theme.breakpoints.only("sm")]: {
+            
+                marginTop: "35%"
+            },
+            [theme.breakpoints.down("xs")]: {
+                fontSize: "small",
+                marginTop: "50%"
             }
 
+        },
+  
+        iconMenu: {
+            [theme.breakpoints.down("xs")]: {
+                height: "20px"
+            }
+        },
+        logoIcon: {
+            [theme.breakpoints.down("xs")]: {
+                height: "50px"
+            }
         },
         sixthDiv: {
             display: "flex",
         },
 
         playWord: {
-            color: "white",
-            position: "absolute",
-            left: "49%",
-            paddingTop: "2%",
-            [theme.breakpoints.only("xs")]: {
-                left: "45%",
-                paddingTop: "9%",
-            },
-            [theme.breakpoints.only("sm")]: {
-                left: "48%",
-                paddingTop: "4%",
+            '&.MuiSvgIcon-root': {
+                fontSize: "6rem",
+                color: "white"
             }
+            // color: "white",
+            // position: "absolute",
+            // left: "49%",
+            // paddingTop: "2%",
+            // [theme.breakpoints.only("xs")]: {
+            //     left: "45%",
+            //     paddingTop: "9%",
+            // },
+            // [theme.breakpoints.only("sm")]: {
+            //     left: "48%",
+            //     paddingTop: "4%",
+            // }
         },
 
         seventhDiv: {
@@ -423,7 +413,7 @@ export const useStyles = makeStyles((theme) => {
         },
         eighthDiv: {
             color: "white",
-            [theme.breakpoints.only("xs")]: {
+            [theme.breakpoints.down("xs")]: {
                 minHeight: "98vh"
             }
             //width: "35%"
@@ -431,7 +421,7 @@ export const useStyles = makeStyles((theme) => {
         sixthTypo: {
             fontSize: "50px",
             fontWeight: 500,
-            [theme.breakpoints.only("xs")]: {
+            [theme.breakpoints.down("sm")]: {
                 display: "flex",
                 justifyContent: "center"
             }
@@ -440,29 +430,33 @@ export const useStyles = makeStyles((theme) => {
             fontSize: "25px",
             fontWeight: 200,
             marginBottom: "5%",
-            [theme.breakpoints.only("xs")]: {
+            color: "#CFCECD",
+            [theme.breakpoints.down("sm")]: {
                 textAlign: "center"
             }
         },
         firstInput: {
             borderRadius: "0px",
             width: "50%",
-            marginTop:"2%",
+            marginTop: "2%",
             '& .MuiOutlinedInput-root': {
                 borderRadius: "0",
-                border: "groove"
+                border: "groove",
+                borderColor: "#CFCECD"
             },
             '& .MuiInputLabel-root': {
                 color: "white"
             },
-            [theme.breakpoints.only("xs")]: {
+            [theme.breakpoints.down("xs")]: {
                 width: "85%",
                 justifySelf: "center",
                 marginTop: "3%"
             },
             [theme.breakpoints.only("sm")]: {
-                width: "65%",
-                marginTop: "3%"
+                width: "60%",
+                marginTop: "3%",
+                justifySelf: "center",
+
             },
             [theme.breakpoints.only("md")]: {
                 width: "80%",
@@ -480,8 +474,13 @@ export const useStyles = makeStyles((theme) => {
             width: "25%",
             border: "groove",
             borderRadius: "0",
+            borderColor: "white",
             marginTop: "5%",
-            [theme.breakpoints.only("xs")]: {
+            [theme.breakpoints.only("sm")]: {
+                width: "35%",
+                justifySelf: "center"
+            },
+            [theme.breakpoints.down("xs")]: {
                 width: "45%",
                 justifySelf: "center"
             }
@@ -491,7 +490,7 @@ export const useStyles = makeStyles((theme) => {
             [theme.breakpoints.up("sm")]: {
                 minHeight: "15%",
             },
-            [theme.breakpoints.only("xs")]: {
+            [theme.breakpoints.down("xs")]: {
                 minHeight: "18%",
             }
         },
