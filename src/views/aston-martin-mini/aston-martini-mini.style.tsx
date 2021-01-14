@@ -103,12 +103,12 @@ export const useStyles = makeStyles((theme) => {
                 marginRight: "5px"
             }
         },
-        instagramIcon: {
-            position: "absolute",
-            right: "14%",
-            paddingTop: "7px",
+        // instagramIcon: {
+        //     position: "absolute",
+        //     right: "14%",
+        //     paddingTop: "7px",
 
-        },
+        // },
         instagram: {
             color: "white",
             fontSize: "28px",
