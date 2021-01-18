@@ -77,6 +77,7 @@ export const useStyles = makeStyles((theme) => {
     lamborghiniTitle: {
       color: "white",
       paddingLeft: "7%",
+      marginTop:"-130px",
       [theme.breakpoints.down("xs")]: {
         textAlign: "center",
         paddingLeft: "0px",
@@ -130,7 +131,7 @@ export const useStyles = makeStyles((theme) => {
       position: "relative",
     },
     sixthContainer: {
-      background: `linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)),url(${require("assets/lamborghini/sixthPictureLamborghini.png")})`,
+      background: `url(${require("assets/lamborghini/sixthPictureLamborghini.png")})`,
       backgroundPosition: "center center",
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
@@ -141,6 +142,8 @@ export const useStyles = makeStyles((theme) => {
       justifyContent: "center",
       minHeight: "700px",
       width: "100%",
+      filter:"brightness(50%)"
+
     },
     centerImages:{
       width: "100%",
@@ -169,7 +172,7 @@ export const useStyles = makeStyles((theme) => {
     },
     thirdConDetails:{
       marginRight: "8%",
-      paddingLeft: "226px",
+      paddingLeft: "168px",
       paddingTop: "65px",
       [theme.breakpoints.only("md")]:{
         // paddingTop:"42px",
@@ -219,13 +222,24 @@ export const useStyles = makeStyles((theme) => {
       backgroundSize: "cover",
       height: "330px",
       clipPath: "polygon(37% 0%, 100% 0%, 100% 100%, 0% 100%)",
+      marginLeft:"3px",
       [theme.breakpoints.only("sm")]:{
-        height:"200px"
+        height:"200px",
+        marginLeft:"2px",
+
       },
       [theme.breakpoints.down("xs")]:{
         height: "240px",
-        clipPath: "polygon(80% 0%, 100% 0%, 100% 100%, 0% 100%)",
-
+        clipPath: "polygon(75% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        marginLeft:"0px",
+      }
+    },
+    conFourth:{
+      textAlign: "end",
+      marginTop: "130px",
+      marginRight: "135px",
+      [theme.breakpoints.down("xs")]:{
+        marginRight:"8px"
       }
     },
     fourthTypo:{
@@ -246,6 +260,19 @@ export const useStyles = makeStyles((theme) => {
       backgroundSize: "cover",
       height: "330px",
       clipPath: "polygon(37% 0%, 100% 0%, 100% 100%, 0% 100%)",
+      marginLeft:"3px",
+      [theme.breakpoints.only("sm")]:{
+        height:"200px",
+        marginLeft:"2px",
+
+      },
+      [theme.breakpoints.down("xs")]:{
+        height: "240px",
+        clipPath: "polygon(80% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        marginLeft:"0px",
+
+
+      }
     },
     leftPicture: {
       background: `url(${require("assets/lamborghini/leftPicture.png")})`,
@@ -255,13 +282,17 @@ export const useStyles = makeStyles((theme) => {
       height: "330px",
       //  marginLeft: "-144px",
       width: "64%",
-      marginRight: "-280px",
-      marginLeft: "-70px",
+      marginRight: "-295px",
+      marginLeft: "-87px",
       [theme.breakpoints.only("md")]:{
-        height:"268px"
+        height:"268px",
+        marginLeft: "-72px",
+
       },
       [theme.breakpoints.only("sm")]:{
-        height:"200px"
+        height:"200px",
+        marginRight: "-280px",
+        marginLeft: "-87px",
       }
     },
     rightPicture: {
@@ -271,7 +302,26 @@ export const useStyles = makeStyles((theme) => {
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       height: "330px",
-      marginLeft: "-53px",
+      marginLeft: "36px",
+      right: "-51px",
+      marginRight: "-55px",
+      [theme.breakpoints.only("md")]:{
+        height:"268px",
+        marginLeft:"100px"
+      },
+      [theme.breakpoints.only("sm")]:{
+        height:"200px",
+        marginLeft:"145px"
+      }
+    },
+    rightPicture1: {
+      width: "64%",
+      background: `url(${require("assets/lamborghini/pictureRight.png")})`,
+      backgroundPosition: "center center",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover",
+      height: "330px",
+      marginLeft: "36px",
       right: "-51px",
       marginRight: "-55px",
       [theme.breakpoints.only("md")]:{
@@ -295,7 +345,7 @@ export const useStyles = makeStyles((theme) => {
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       height: "330px",
-      marginLeft: "-300px",
+      marginLeft: "-311px",
       width: "61% ",
       [theme.breakpoints.only("md")]:{
         width:"800px",
@@ -317,6 +367,7 @@ export const useStyles = makeStyles((theme) => {
     sixthTypo:{
       textAlign: "end",
       paddingTop: "40px",
+      paddingRight:"40px",
       [theme.breakpoints.only("md")]:{
         paddingRight:"0px",
   
@@ -361,6 +412,22 @@ export const useStyles = makeStyles((theme) => {
     inputFirst: {
       marginTop: "25px",
       width: "415px",
+     "& .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline" :{
+      borderWidth:"0px",
+      borderColor:"unset",
+      display:"none"
+
+     },
+     "& .MuiOutlinedInput-root:focused .MuiOutlinedInput-notchedOutline" :{
+     // borderWidth:"0px",
+      borderColor:"unset",
+      display:"none"
+     },
+      "& .MuiInputBase-input ":{
+         color:"white",
+         marginLeft:"30px",
+         marginTop:"15px"
+      },
 
       "& .MuiInputLabel-root": {
         color: "white",
@@ -394,7 +461,7 @@ export const useStyles = makeStyles((theme) => {
         width: "350px",
         left: "0px",
         height: "27px",
-        zIndex: "6",
+        zIndex: "-1",
         border: "3px solid white",
         [theme.breakpoints.down("xs")]:{
           width: "255px",
