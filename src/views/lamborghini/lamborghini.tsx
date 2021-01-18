@@ -1,4 +1,4 @@
-import { Button, Grid, TextField, Typography } from "@material-ui/core";
+import { Button, Grid, InputBase, Typography } from "@material-ui/core";
 import React from "react";
 import { useStyles } from "./lamborghini.style";
 import InstagramIcon from "@material-ui/icons/Instagram";
@@ -10,7 +10,7 @@ export const Lamborghini = () => {
   const classes = useStyles();
   return (
     <>
-      <Grid container>
+      <Grid container style={{ overflowX: "hidden" }}>
         {/* -------------------FIRST CONTAINER---------------------------- */}
         <Grid
           container
@@ -150,7 +150,6 @@ export const Lamborghini = () => {
                 <br />
                 eiusmod tempor incididunt ut labore
                 <span className={classes.crop}>
-            
                   et dolore magna aliqua. Ut
                   <br />
                   enim ad minim veniam, quis nostrud exercitation ullamco
@@ -168,7 +167,13 @@ export const Lamborghini = () => {
                 </span>
               </Typography>
             </Grid>
-            <Grid item xs={7} sm={5} lg={5} className={classes.subAventador}></Grid>
+            <Grid
+              item
+              xs={7}
+              sm={5}
+              lg={5}
+              className={classes.subAventador}
+            ></Grid>
           </Grid>
           <div className={classes.centerImages}>
             <div className={classes.leftPicture}></div>
@@ -176,7 +181,7 @@ export const Lamborghini = () => {
           </div>
           <Grid container item xs={12} className={classes.bottomSide}>
             <div className={classes.leftBottomPicture}></div>
-            <Grid xs={6} sm={5} className={classes.sixthTypo}>
+            <Grid xs={6} sm={5} lg={6} className={classes.sixthTypo}>
               <Typography
                 variant="h5"
                 style={{ fontWeight: 700, marginBottom: "15px" }}
@@ -218,11 +223,8 @@ export const Lamborghini = () => {
               <Grid
                 item
                 xs={12}
-                style={{
-                  textAlign: "end",
-                  marginTop: "130px",
-                  marginRight: "135px",
-                }}
+               
+                className={classes.conFourth}
               >
                 <Typography className={classes.aventador}>AVENTADOR</Typography>
                 <Typography>
@@ -280,7 +282,7 @@ export const Lamborghini = () => {
         /> */}
         <Grid container className={classes.thirdContainer}>
           <Grid container item xs={12} className={classes.seventhTypo}>
-            <Grid item xs={4}sm={6} lg={6} className={classes.thirdConDetails}>
+            <Grid item xs={4} sm={6} lg={6} className={classes.thirdConDetails}>
               <Typography
                 variant="h5"
                 style={{ fontWeight: 700, marginBottom: "15px" }}
@@ -292,7 +294,6 @@ export const Lamborghini = () => {
                 <br />
                 eiusmod tempor incididunt ut labore{" "}
                 <span className={classes.crop}>
-                  
                   et dolore magna aliqua. Ut
                   <br />
                   enim ad minim veniam, quis nostrud exercitation ullamco
@@ -310,15 +311,21 @@ export const Lamborghini = () => {
                 </span>
               </Typography>
             </Grid>
-            <Grid item xs={7} sm={5} lg={5} className={classes.subAventador}></Grid>
+            <Grid
+              item
+              xs={7}
+              sm={5}
+              lg={5}
+              className={classes.subAventador1}
+            ></Grid>
           </Grid>
           <div className={classes.centerImages}>
             <div className={classes.leftPicture}></div>
-            <div className={classes.rightPicture}></div>
+            <div className={classes.rightPicture1}></div>
           </div>
           <Grid container item xs={12} className={classes.bottomSide}>
             <div className={classes.leftBottomPicture}></div>
-            <Grid xs={6} sm={5} className={classes.sixthTypo}>
+            <Grid xs={6} sm={5} lg={6} className={classes.sixthTypo}>
               <Typography
                 variant="h5"
                 style={{ fontWeight: 700, marginBottom: "15px" }}
@@ -330,7 +337,6 @@ export const Lamborghini = () => {
                 <br />
                 eiusmod tempor incididunt ut labore{" "}
                 <span className={classes.crop}>
-                  
                   et dolore magna aliqua. Ut
                   <br />
                   enim ad minim veniam, quis nostrud exercitation ullamco
@@ -374,19 +380,16 @@ export const Lamborghini = () => {
             Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit, sed
             s do eiusmod tempor
           </Typography>
-          <TextField
-            label="AD"
-            variant="outlined"
+          <InputBase
+            placeholder="AD"
             className={clsx(classes.inputFirst, classes.hexagonBtn)}
           />
-          <TextField
-            label="SOYAD"
-            variant="outlined"
+          <InputBase
+            placeholder="SOYAD"
             className={clsx(classes.inputFirst, classes.hexagonBtn)}
           />
-          <TextField
-            label="EMAİL"
-            variant="outlined"
+          <InputBase
+            placeholder="EMAIL"
             className={clsx(classes.inputFirst, classes.hexagonBtn)}
           />
           <div style={{ width: "100%" }}>
