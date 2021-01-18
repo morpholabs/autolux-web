@@ -64,7 +64,7 @@ export const useStyles = makeStyles((theme) => {
     },
     textRest:{
       [theme.breakpoints.up("sm")]:{
-        display:"block"
+        display:"none"
       }
     },
 
