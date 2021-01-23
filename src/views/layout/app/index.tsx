@@ -1,4 +1,5 @@
-import { Container, makeStyles } from "@material-ui/core";
+import { Container, Fab, Icon, makeStyles } from "@material-ui/core";
+import { ScrollTop } from "components";
 import React from "react";
 import AppRouter from "routes/AppRouter";
 
@@ -19,6 +20,10 @@ export const useStyles = makeStyles(() => ({
     //   width: "calc(100% + 3px)",
     // },
   },
+  fab: {
+    backgroundColor: "white",
+    color: "black",
+  },
 }));
 
 const App = () => {
@@ -29,6 +34,15 @@ const App = () => {
       <main>
         <Container maxWidth="xl" className={classes.container}>
           <AppRouter />
+          <ScrollTop>
+            <Fab
+              className={classes.fab}
+              size="medium"
+              aria-label="scroll back to top"
+            >
+              <Icon fontSize="large">keyboard_arrow_up</Icon>
+            </Fab>
+          </ScrollTop>
         </Container>
       </main>
     </div>
