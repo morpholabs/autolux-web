@@ -86,7 +86,7 @@ export const useStyles = makeStyles((theme) => {
 
     btnFirst: {
       color: "white",
-      border: "ridge",
+      border: "1px solid",
       marginTop: "15px",
       borderRadius: "0",
       width: "180px",
@@ -94,6 +94,11 @@ export const useStyles = makeStyles((theme) => {
         width: "150px",
         height:"45px"
       },
+      "&:hover":{
+        backgroundColor:"white",
+        color:"black"
+
+      }
     },
     btnMain: {
       [theme.breakpoints.down("sm")]: {
@@ -108,8 +113,8 @@ export const useStyles = makeStyles((theme) => {
     },
 
     loremIpsum: {
-        fontSize: "45px",
-        fontWeight:900,
+        fontSize: "70px",
+        fontWeight:700,
         marginTop: "10px",
         marginBottom: "15px",
         [theme.breakpoints.down("sm")]: {
@@ -123,6 +128,7 @@ export const useStyles = makeStyles((theme) => {
 
     eighthTypo: {
         color: "#CFCECD",
+        fontSize:"25px",
         '&.MuiTypography-body1': {
             [theme.breakpoints.down("sm")]: {
                 textAlign: "center",
@@ -353,6 +359,7 @@ export const useStyles = makeStyles((theme) => {
    wordInterior:{
      marginTop:"90px",
      paddingLeft:"24%",
+     color:"grey",
      [theme.breakpoints.down("sm")]:{
       marginTop:"0px",
       paddingLeft:"0%",
@@ -380,16 +387,23 @@ export const useStyles = makeStyles((theme) => {
   },
   btnSecond:{
     color:"white",
-    border:"groove",
+    border:"1px solid",
     borderRadius:"0px",
     marginTop:"35px",
     width:"40%",
+    height:"50px",
+    fontSize:"18px",
     [theme.breakpoints.down("sm")]:{
-      width:"50%"
+      width:"50%",
+      height:"40px"
+     },
+     "&:hover":{
+       backgroundColor:"white",
+       color:"black"
      }
   },
   inputFirst:{
-    border:"groove",
+    border:"1px solid",
     borderRadius:"0px",
     marginTop:"25px",
     width:"415px",
@@ -398,7 +412,7 @@ export const useStyles = makeStyles((theme) => {
       color:"white"
     },
     [theme.breakpoints.down("xs")]:{
-      width:"100%",
+      width:"90%",
      }
   },
   secondBtn:{
@@ -426,7 +440,26 @@ export const useStyles = makeStyles((theme) => {
       minHeight: "200px",
 
     }
+  },
+  upButton:{
+    right:"24px",
+    bottom:"24px",
+    zIndex:100,
+    position:"fixed",
+    transform:"none",
+    transition:"transform 225ms cubic-bezier(0.4,0,0.2,1)0ms",
+    backgroundColor:"white",
+    borderRadius:"60px"
+},
+contactText:{
+  color: "#C2C0BF",
+  fontSize: "20px",
+  marginTop: "15px",
+  marginBottom: "15px",
+  [theme.breakpoints.down("xs")]:{
+  fontSize:"15px"
   }
+}
 
 
   };
