@@ -13,3 +13,184 @@ code {
     monospace;
     color:black !important;
 }
+
+@font-face {
+  font-family: 'Linux Biolinum Keyboard O';
+  src: url('assets/fonts/astonFonts/LinBiolinumOKb.woff2') format('woff2'),
+      url('assets/fonts/astonFonts/LinBiolinumOKb.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Linux Biolinum O';
+  src: url('assets/fonts/astonFonts/LinBiolinumOI.woff2') format('woff2'),
+      url('assets/fonts/astonFonts/LinBiolinumOI.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Linux Biolinum O';
+  src: url('assets/fonts/astonFonts/LinBiolinumOB.woff2') format('woff2'),
+      url('assets/fonts/astonFonts/LinBiolinumOB.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Linux Biolinum O';
+  src: url('assets/fonts/astonFonts/LinBiolinumO.woff2') format('woff2'),
+      url('assets/fonts/astonFonts/LinBiolinumO.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('assets/fonts/lamborghiniFonts/ProximaNova-Bold.woff2') format('woff2'),
+      url('assets/fonts/lamborghiniFonts/ProximaNova-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('assets/fonts/lamborghiniFonts/ProximaNova-ExtraBold.woff2') format('woff2'),
+      url('assets/fonts/lamborghiniFonts/ProximaNova-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('assets/fonts/lamborghiniFonts/ProximaNova-Black.woff2') format('woff2'),
+      url('assets/fonts/lamborghiniFonts/ProximaNova-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('assets/fonts/lamborghiniFonts/ProximaNova-Italic.woff2') format('woff2'),
+      url('assets/fonts/lamborghiniFonts/ProximaNova-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('assets/fonts/lamborghiniFonts/ProximaNova-BoldItalic.woff2') format('woff2'),
+      url('assets/fonts/lamborghiniFonts/ProximaNova-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('assets/fonts/lamborghiniFonts/ProximaNova-ExtraBoldItalic.woff2') format('woff2'),
+      url('assets/fonts/lamborghiniFonts/ProximaNova-ExtraBoldItalic.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('assets/fonts/lamborghiniFonts/ProximaNova-BlackItalic.woff2') format('woff2'),
+      url('assets/fonts/lamborghiniFonts/ProximaNova-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('assets/fonts/lamborghiniFonts/ProximaNova-Medium.woff2') format('woff2'),
+      url('assets/fonts/lamborghiniFonts/ProximaNova-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('assets/fonts/lamborghiniFonts/ProximaNova-ThinItalic.woff2') format('woff2'),
+      url('assets/fonts/lamborghiniFonts/ProximaNova-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('assets/fonts/lamborghiniFonts/ProximaNova-MediumItalic.woff2') format('woff2'),
+      url('assets/fonts/lamborghiniFonts/ProximaNova-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('assets/fonts/lamborghiniFonts/ProximaNova-Thin.woff2') format('woff2'),
+      url('assets/fonts/lamborghiniFonts/ProximaNova-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('assets/fonts/lamborghiniFonts/ProximaNova-Light.woff2') format('woff2'),
+      url('assets/fonts/lamborghiniFonts/ProximaNova-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('assets/fonts/lamborghiniFonts/ProximaNova-LightItalic.woff2') format('woff2'),
+      url('assets/fonts/lamborghiniFonts/ProximaNova-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('assets/fonts/lamborghiniFonts/ProximaNova-SemiBoldItalic.woff2') format('woff2'),
+      url('assets/fonts/lamborghiniFonts/ProximaNova-SemiBoldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('assets/fonts/lamborghiniFonts/ProximaNova-Regular.woff2') format('woff2'),
+      url('assets/fonts/lamborghiniFonts/ProximaNova-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('assets/fonts/lamborghiniFonts/ProximaNova-SemiBold.woff2') format('woff2'),
+      url('assets/fonts/lamborghiniFonts/ProximaNova-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+

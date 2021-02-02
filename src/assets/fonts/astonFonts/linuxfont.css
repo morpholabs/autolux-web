@@ -1,0 +1,36 @@
+
+@font-face {
+    font-family: 'Linux Biolinum Keyboard O';
+    src: url('assets/fonts/LinBiolinumOKb.woff2') format('woff2'),
+        url('../fonts/LinBiolinumOKb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Linux Biolinum O';
+    src: url('../fonts/LinBiolinumOI.woff2') format('woff2'),
+        url('../fonts/LinBiolinumOI.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Linux Biolinum O';
+    src: url('../fonts/LinBiolinumOB.woff2') format('woff2'),
+        url('../fonts/LinBiolinumOB.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Linux Biolinum O';
+    src: url('../fonts/LinBiolinumO.woff2') format('woff2'),
+        url('../fonts/LinBiolinumO.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

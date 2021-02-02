@@ -1,39 +1,44 @@
-import { Button, Grid, InputBase, Typography } from "@material-ui/core";
-import clsx from "clsx";
-import React, { useEffect } from "react";
-import { useStyles } from "./aston-martini-mini.style";
-import InstagramIcon from "@material-ui/icons/Instagram";
+import {
+  Button,
+  Grid,
+  InputBase,
+  Typography
+} from "@material-ui/core";
 import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
 import Aos from "aos";
 import "aos/dist/aos.css";
-//import ExpandLessIcon from '@material-ui/icons/ExpandLess';
-//import { t } from "i18n";
+import clsx from "clsx";
+import React, { useEffect } from "react";
+import { useStyles } from "./aston-martini-mini.style";
+
+import TemporaryDrawer from "../subComponents/menuNav/drawerSide";
 
 export const AstonMartinMini = () => {
   const classes = useStyles();
+ 
+
   useEffect(() => {
-    Aos.init({ duration: 1000 });
+    Aos.init({ duration: 1000, once: true });
   }, []);
+  // -------------------------------SIDEBAR----------------------------------------------
+
+
   return (
-    <>
-      <Grid container xs={12} style={{ width: "100%" }}>
+      <>
+      <Grid container xs={12} className={classes.mainContainer}>
         {/* ----------------------FIRST CONTAINER----------------------------- */}
         <Grid container xs={12}>
           {/* ---------------HEADER------------- */}
           <video autoPlay loop muted className={classes.firstContainer}>
             <source
-              src={require("assets/aston-martini-video/aston.mp4")}
+              src={require("assets/aston-martini-video/astonMartinVideoTrim1.mp4")}
               type="video/mp4"
             />
           </video>
 
           <Grid item container className={classes.firstSubContainer}>
             <Grid item xs={4} className={classes.menuIcon}>
-              <img
-                src={require("../../assets/aston-martini/Menu.png")}
-                alt="fireSpot"
-                className={classes.iconMenu}
-              />
+              <TemporaryDrawer />
             </Grid>
             <Grid item xs={4} className={classes.iconAston}>
               <div>
@@ -45,34 +50,17 @@ export const AstonMartinMini = () => {
               </div>
             </Grid>
             <Grid item container xs={4} className={classes.socialMediaIcon}>
-              <Grid item>
-                <a href="">
-                  <img
-                    src={require("../../assets/aston-martini/facebookLogo.png")}
-                    alt="fireSpot"
-                    className={classes.iconMenu}
-                  />
-                </a>
-              </Grid>
-              <Grid item className={classes.twitterIcon}>
-                <a href="">
-                  <img
-                    src={require("../../assets/aston-martini/twitterLogo.png")}
-                    alt="fireSpot"
-                    className={classes.iconMenu}
-                  />
-                </a>
-              </Grid>
-              <Grid item>
-                <a href="">
-                  <InstagramIcon className={classes.instagram} />
-                </a>
-              </Grid>
-            </Grid>
-          </Grid>
+              <div className={classes.contact} onClick={()=>{
+              const getobject=document.getElementById("ƏLAQƏ");
+              window.scrollTo({top:getobject?.offsetTop,behavior:"smooth"})
+            }}>
+              <span style={{marginRight:"5px",fontSize:"20px"}}><i className="far fa-comment-alt-dots"></i></span>
+                <Typography variant="h6">ƏLAQƏ</Typography>
+              </div>
+              <span  className={classes.contactIcon}><i className="far fa-comment-alt-dots"></i></span>
 
-          {/* <Grid item md={7} lg={7}></Grid> */}
-          {/* <div style={{position:"absolute" ,color:"white"}}>asasasasasasasasaaaas</div> */}
+            </Grid> 
+          </Grid>
           <Grid
             item
             xs={12}
@@ -88,20 +76,22 @@ export const AstonMartinMini = () => {
               <span className={classes.dolorNone}>DOLOR SIT AMET</span>
             </Typography>
             <Typography className={classes.eighthTypo}>
-              Lorem ipsum dolor sit amet, consectetur{" "}
+              Lorem ipsum dolor sit amet, consectetur
               <span className={classes.continueText}>
                 adipiscing elit,sed do eiusmod tempor incididunt ut labore et
                 dolore magna
               </span>
             </Typography>
             <Grid item className={classes.btnMain}>
-              <Button className={classes.btnFirst}>Daha Çox</Button>
+              <Button className={classes.btnFirst}>Daha Çox
+
+              </Button>
             </Grid>
           </Grid>
         </Grid>
         {/* ----------------------SECOND CONTAINER----------------------------- */}
 
-        <Grid container xs={12} className={classes.secondContainer}>
+        <Grid container xs={12} className={classes.secondContainer} id="DBX">
           <Grid
             item
             xs={12}
@@ -120,11 +110,10 @@ export const AstonMartinMini = () => {
               <a href="" className={classes.secondBtn}>
                 DAHA ÇOX
               </a>
-              {/* <Button >DAHA ÇOX</Button> */}
             </div>
           </Grid>
 
-          <Grid item xs={12} md={6} lg={7} className={classes.secondDiv}>
+          <Grid item xs={12} md={6} lg={7} className={classes.secondDiv} >
             <Grid item xs={12} data-aos="fade-left" className={classes.forTest}>
               <Typography className={classes.shortInfo}>
                 QISA MƏLUMAT
@@ -134,7 +123,6 @@ export const AstonMartinMini = () => {
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud{" "}
                 <span className={classes.loremText}>
-                  {" "}
                   exercitation ullamco laboris nisi ut aliquip ex ea commodo
                   consequat. Duis aute irure dolor in reprehenderit in voluptate
                   velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
@@ -158,17 +146,18 @@ export const AstonMartinMini = () => {
               item
               xs={12}
               className={classes.fifthDiv}
-              data-aos="fade-left"
+             
             >
               <Grid
                 item
                 xs={12}
                 lg={6}
-                className={clsx(classes.thirdDiv, classes.theSameClass3)}
+                className={clsx(classes.thirdDiv, classes.theSameClass3) }
+                data-aos="fade-left"
               >
                 <Typography className={classes.interyer}>INTERYER</Typography>
                 <Typography className={classes.textLorem}>
-                  Lorem ipsum dolor sit amet{" "}
+                  Lorem ipsum dolor sit amet
                   <span className={classes.loremText1}>
                     , consectetur adipiscing elit,
                   </span>
@@ -182,6 +171,8 @@ export const AstonMartinMini = () => {
                 xs={12}
                 lg={6}
                 className={clsx(classes.fourthDiv, classes.theSameClass3)}
+                data-aos="fade-left"
+                style={{transition:"1s linear"}}
               >
                 <Typography className={classes.interyer}>EKSTERYER</Typography>
                 <Typography className={classes.textLorem}>
@@ -214,7 +205,7 @@ export const AstonMartinMini = () => {
         </Grid>
         {/* ----------------------FOURTH CONTAINER----------------------------- */}
 
-        <Grid container xs={12} className={classes.secondContainer}>
+        <Grid container xs={12} className={classes.secondContainer} >
           <Grid
             item
             xs={12}
@@ -223,6 +214,7 @@ export const AstonMartinMini = () => {
             lg={5}
             data-aos="fade-right"
             className={clsx(classes.leftSide1, classes.theSameClass)}
+            id="VANTAGE"
           >
             <div className={classes.freeDiv}></div>
             <div className={classes.firstDiv}>
@@ -236,7 +228,7 @@ export const AstonMartinMini = () => {
               {/* <Button >DAHA ÇOX</Button> */}
             </div>
           </Grid>
-          <Grid item xs={12} md={6} lg={7} className={classes.secondDiv}>
+          <Grid item xs={12} md={6} lg={7} className={classes.secondDiv} >
             <Grid item xs={12} className={classes.forTest} data-aos="fade-left">
               <Typography className={classes.shortInfo}>
                 QISA MƏLUMAT
@@ -277,7 +269,6 @@ export const AstonMartinMini = () => {
                 <Typography className={classes.textLorem2}>
                   Lorem ipsum dolor sit amet{" "}
                   <span className={classes.loremText1}>
-                    {" "}
                     consectetur adipiscing elit,
                   </span>
                 </Typography>
@@ -291,6 +282,7 @@ export const AstonMartinMini = () => {
                 lg={6}
                 className={clsx(classes.fourthDiv1, classes.theSameClass3)}
                 data-aos="fade-left"
+                style={{transition:"1s linear"}}
               >
                 <Typography className={classes.interyer}>EKSTERYER</Typography>
                 <Typography className={classes.textLorem2}>
@@ -319,19 +311,13 @@ export const AstonMartinMini = () => {
           <a href="">
             <div className={classes.sixthDiv}>
               <PlayCircleOutlineIcon className={classes.playWord} />
-              {/* <img src={require('../../assets/aston-martini/circleIcon.png')} alt="fireSpot" />
-              <Typography className={classes.playWord}>PLAY</Typography> */}
+             
             </div>
           </a>
         </Grid>
         {/* ----------------------SIXTH CONTAINER----------------------------- */}
 
-        <Grid
-          container
-          xs={12}
-          className={ classes.sixthContainer}
-        >
-          {/* <div className={classes.seventhDiv}></div> */}
+        <Grid container xs={12} className={classes.sixthContainer} id="ƏLAQƏ">
           <Grid
             item
             xs={12}
@@ -361,11 +347,6 @@ export const AstonMartinMini = () => {
               <Button className={classes.fourthBtn}>GÖNDƏR</Button>
             </Grid>
           </Grid>
-          {/* <Grid className={classes.upButton} role="presentation">
-            <Button style={{color:"black"}}>
-            <ExpandLessIcon style={{fontSize:"50px"}}/>
-            </Button>
-          </Grid> */}
         </Grid>
       </Grid>
     </>

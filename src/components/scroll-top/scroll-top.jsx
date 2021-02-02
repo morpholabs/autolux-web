@@ -12,7 +12,7 @@ export function ScrollTop(props) {
     });
 
     const handleClick = (event) => {
-            window.scrollTo({ top: 0, behavior: 'smooth'});
+        window.scrollTo({ top: 0, behavior: 'smooth'});
     };
 
     return (
