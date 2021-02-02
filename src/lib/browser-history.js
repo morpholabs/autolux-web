@@ -1,6 +1,9 @@
 // history.js
 import { createBrowserHistory } from 'history';
 
-export default createBrowserHistory({
-    /* pass a configuration object here if needed */
-});
+const history=createBrowserHistory();
+
+history.listen(()=>{
+    window.scrollTo({top:0, left:0})
+})
+export default history;

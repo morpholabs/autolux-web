@@ -1,5 +1,6 @@
 import { Container, Fab, Icon, makeStyles } from "@material-ui/core";
 import { ScrollTop } from "components";
+import { Footer } from "components/footer/footer";
 import React from "react";
 import AppRouter from "routes/AppRouter";
 
@@ -32,7 +33,7 @@ const App = () => {
   return (
     <div>
       <main>
-        <Container maxWidth="xl" className={classes.container}>
+        <Container style={{maxWidth:"unset"}} className={classes.container}>
           <AppRouter />
           <ScrollTop>
             <Fab
@@ -43,6 +44,7 @@ const App = () => {
               <Icon fontSize="large">keyboard_arrow_up</Icon>
             </Fab>
           </ScrollTop>
+          <Footer/>
         </Container>
       </main>
     </div>

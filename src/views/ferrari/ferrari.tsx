@@ -1,11 +1,10 @@
-import { Button, Grid, TextField, Typography } from "@material-ui/core";
+import { Button, Grid,InputBase, Typography } from "@material-ui/core";
 import React, { useEffect } from "react";
 import { useStyles } from "./ferrari.style";
-import InstagramIcon from "@material-ui/icons/Instagram";
 import clsx from "clsx";
 import Aos from "aos";
 import "aos/dist/aos.css";
-//import ExpandLessIcon from '@material-ui/icons/ExpandLess';
+import TemporaryDrawer from '../subComponents/menuNav/drawerSide';
 
 interface FerrariSectionProps {
   header: string;
@@ -38,7 +37,7 @@ const FerrariSection: React.FC<FerrariSectionProps> = ({
 }) => {
   const classes = useStyles();
   useEffect(() => {
-    Aos.init({ duration: 1000 });
+    Aos.init({ duration: 1000,once:true });
   }, []);
   return (
     <>
@@ -52,7 +51,7 @@ const FerrariSection: React.FC<FerrariSectionProps> = ({
         }}
         className={classes.secondContainerPicture}
       >
-        <Typography className={classes.fifthTypo} variant="h2">
+        <Typography className={classes.fifthTypo} variant="h2"  data-aos="fade-up">
           {header}
         </Typography>
       </Grid>
@@ -94,21 +93,21 @@ const FerrariSection: React.FC<FerrariSectionProps> = ({
             </Grid>
           </Grid>
         </Grid>
-        <Grid container item xs={12} sm={12} md={6} lg={6} data-aos="fade-left">
+        <Grid container item xs={12} sm={12} md={6} lg={6} data-aos="fade-left" >
+          <div>
           <Typography variant="h6" className={classes.fourthTypo}>
             {text1}
             <span className={classes.blockDisplay}>{text2}</span>
-            <Grid item xs={12} className={classes.firstBtn}>
+          </Typography>
+          <Grid item xs={12} className={classes.firstBtn}>
               <Button className={classes.btnFirst}>
                 Daha Çox
-                <img
-                  src={require("../../assets/ferrari/chevron-circle-right-solid.svg")}
-                  alt="fireSpot"
-                  className={classes.chevronIcon}
-                />
+                <span className={classes.chevronIcon}>
+                <i className="fas fa-chevron-right" style={{fontSize:"18px"}}></i>
+                </span>
               </Button>
             </Grid>
-          </Typography>
+        </div>
         </Grid>
       </Grid>
     </>
@@ -119,22 +118,24 @@ export const Ferrari = () => {
   const classes = useStyles();
   return (
     <>
-      <Grid container style={{ width: "100%" }}>
+      <Grid container style={{ width: "100%" }} className={classes.mainContainer}>
         {/* ------------------FIRST CONTAINER------------------------ */}
         <Grid
           container
-          className={clsx(classes.firstContainer, classes.section)}
+          
         >
+          <video autoPlay loop muted className={clsx(classes.firstContainer, classes.section)}>
+            <source
+              src={require("assets/ferrari-video/ferrariVideo3Axirinci.mp4")}
+              type="video/mp4"
+            />
+          </video>
           {/* ---------HEADER------- */}
           <Grid item container className={classes.firstSubContainer}>
             <Grid item xs={3} md={1} lg={1} className={classes.menuIcon}>
-              <img
-                src={require("../../assets/aston-martini/Menu.png")}
-                alt="fireSpot"
-                className={classes.iconMenu}
-              />
+              <TemporaryDrawer fontFamily="Proxima Nova"/>
             </Grid>
-            <Grid item xs={4} lg={4} className={classes.iconAston}>
+            <Grid item xs={4} lg={5} className={classes.iconAston}>
               <div>
                 <img
                   src={require("../../assets/ferrari/ferrariLogo.png")}
@@ -144,50 +145,31 @@ export const Ferrari = () => {
               </div>
             </Grid>
             <Grid item container xs={4} className={classes.socialMediaIcon}>
-              <Grid item>
-                <a href="">
-                  <img
-                    src={require("../../assets/aston-martini/facebookLogo.png")}
-                    alt="fireSpot"
-                    className={classes.iconMenu}
-                  />
-                </a>
-              </Grid>
-              <Grid item className={classes.twitterIcon}>
-                <a href="">
-                  <img
-                    src={require("../../assets/aston-martini/twitterLogo.png")}
-                    alt="fireSpot"
-                    className={classes.iconMenu}
-                  />
-                </a>
-              </Grid>
-              <Grid item>
-                <a href="">
-                  <InstagramIcon className={classes.instagram} />
-                </a>
-              </Grid>
+            <div className={classes.contact2} onClick={()=>{
+              const getobject=document.getElementById("ƏLAQƏ");
+              window.scrollTo({top:getobject?.offsetTop,behavior:"smooth"})
+            }}>
+              <span style={{marginRight:"5px",fontSize:"20px"}}><i className="far fa-comment-alt-dots"></i></span>
+                <Typography variant="h6">ƏLAQƏ</Typography>
+              </div>
+              <span  className={classes.contactIcon}><i className="far fa-comment-alt-dots"></i></span>
+
             </Grid>
           </Grid>
           {/* ----------------HEADER FINISH HERE-------------------------- */}
-          <Grid item md={1} lg={1}></Grid>
           <Grid
             item
-            md={11}
-            lg={11}
+            md={12}
+            lg={12}
             className={classes.secondSide}
-            data-aos="fade-right"
           >
-            {/* <Grid item xs={12}>
-              <Typography color="textSecondary" className={classes.firstWord}>ASTON MARTIN</Typography>
-            </Grid> */}
-            <Grid item>
+            <Grid item data-aos="fade-up">
               <Typography className={classes.loremIpsum}>
                 LOREM IPSUM <br />
                 DOLOR SIT AMET
               </Typography>
             </Grid>
-            <Grid item>
+            <Grid item  data-aos="fade-right">
               <Typography className={classes.eighthTypo}>
                 Lorem ipsum dolor sit amet, consectetur
                 <span className={classes.textRest}>
@@ -195,14 +177,12 @@ export const Ferrari = () => {
                 </span>
               </Typography>
             </Grid>
-            <Grid item className={classes.btnMain}>
+            <Grid item className={classes.btnMain}   data-aos="fade-left">
               <Button className={classes.btnFirst}>
                 Daha Çox
-                <img
-                  src={require("../../assets/ferrari/chevron-circle-right-solid.svg")}
-                  alt="fireSpot"
-                  className={classes.chevronIcon}
-                />
+                <span className={classes.chevronIcon} >
+                <i className="fas fa-chevron-right" style={{fontSize:"18px"}}></i>
+                </span>
               </Button>
             </Grid>
           </Grid>
@@ -238,24 +218,28 @@ export const Ferrari = () => {
 
         {/* ------------------FOURTH CONTAINER------------------------ */}
 
-        <Grid container className={classes.fourthContainer}>
+        <Grid container className={classes.fourthContainer} id="DBX">
           <Grid
             item
             xs={12}
             md={5}
             className={classes.eksteryer}
-            data-aos="fade-right"
+            data-aos="fade-left"
           >
             <Grid item xs={3} className={classes.interyer}>
               <div className={classes.inline1}></div>
               <Grid item xs={3} md={6}>
-                <Typography className={classes.ninthTypo}  variant="h4">
+                <Typography className={classes.ninthTypo} variant="h4">
                   INTERYER
                 </Typography>
               </Grid>
             </Grid>
             <Grid item xs={5} md={6}>
-              <Typography variant="h4" className={classes.ninthTypo} style={{color:"grey"}}>
+              <Typography
+                variant="h4"
+                className={classes.ninthTypo}
+                style={{ opacity:"30%" }}
+              >
                 EKSTERYER
               </Typography>
             </Grid>
@@ -266,10 +250,10 @@ export const Ferrari = () => {
             md={6}
             lg={6}
             className={classes.ineteryerPicture}
-            data-aos="fade-left"
+            data-aos="fade-right"
           >
             <Grid item style={{ color: "white" }} className={classes.textLorem}>
-              <Typography className={classes.ninthTypo} variant="h4">
+              <Typography className={classes.ninthTypo1} variant="h4">
                 LOREM İPSUM DOLOR
               </Typography>
               <Typography className={classes.secondTypo}>
@@ -310,10 +294,16 @@ export const Ferrari = () => {
         />
 
         {/* ------------------SIXTH CONTAINER------------------------ */}
-        <Grid container className={classes.sixthContainer}>
-          <Grid item xs={12} md={6} className={classes.eksteriorPicture}  data-aos="fade-left">
+        <Grid container className={classes.sixthContainer} id="VANTAGE">
+          <Grid
+            item
+            xs={12}
+            md={6}
+            className={classes.eksteriorPicture}
+            data-aos="fade-left"
+          >
             <Grid item style={{ color: "white" }} className={classes.textLorem}>
-              <Typography className={classes.ninthTypo} variant="h4">
+              <Typography className={classes.ninthTypo1} variant="h4">
                 LOREM İPSUM DOLOR
               </Typography>
               <Typography className={classes.secondTypo}>
@@ -323,15 +313,21 @@ export const Ferrari = () => {
               </Typography>
             </Grid>
           </Grid>
-          <Grid item xs={12} md={5} className={classes.eksterior1} data-aos="fade-right">
+          <Grid
+            item
+            xs={12}
+            md={5}
+            className={classes.eksterior1}
+            data-aos="fade-right"
+          >
             <Grid item xs={4} sm={2} md={12}>
               <Typography className={classes.wordInterior} variant="h4">
                 INTERYER
               </Typography>
             </Grid>
             <Grid item xs={5} sm={2} md={12} className={classes.interyer2}>
-              <Grid item xs={7}>
-                <Typography className={classes.ninthTypo} variant="h4">
+              <Grid item xs={7} className={classes.ekster}>
+                <Typography className={classes.ninthTypo1} variant="h4">
                   EKSTERYER
                 </Typography>
               </Grid>
@@ -342,44 +338,39 @@ export const Ferrari = () => {
 
         {/* ------------------SEVENTH CONTAINER------------------------ */}
 
-        <Grid container xs={12} className={classes.seventhContainer}>
-          <Typography variant="h3" style={{ fontWeight: 900 }}>
+        <Grid container xs={12} className={classes.seventhContainer} id="ƏLAQƏ">
+          <Grid  data-aos="fade-up" >
+          <Typography variant="h3" className={classes.contact}>
             ƏLAQƏ
           </Typography>
-          <Typography
-            variant="h6"
-            className={classes.contactText}
-           
-          >
+          <Typography variant="h6" className={classes.contactText}>
             Lorem ipsum dolor sit amet, consectetur
             <br /> adipiscing elit, sed do eiusmod tempor
           </Typography>
           <Grid item>
-            <TextField
+            <InputBase
               className={classes.inputFirst}
-              label="AD"
-              variant="outlined"
+              placeholder="AD"
             />
           </Grid>
 
           <Grid item>
-            <TextField
+            <InputBase
               className={classes.inputFirst}
-              label="SOYAD"
-              variant="outlined"
+              placeholder="SOYAD"
             />
           </Grid>
           <Grid item>
-            <TextField
+            <InputBase
               className={classes.inputFirst}
-              label="EMAİL"
-              variant="outlined"
+              placeholder="EMAİL"
             />
           </Grid>
 
           <Grid item xs={12} className={classes.secondBtn}>
             <Button className={classes.btnSecond}>GÖNDƏR</Button>
           </Grid>
+        </Grid>
         </Grid>
       </Grid>
     </>
