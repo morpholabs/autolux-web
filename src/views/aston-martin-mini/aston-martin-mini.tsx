@@ -9,10 +9,10 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import clsx from "clsx";
 import React, { useEffect } from "react";
+import { TemporaryDrawer } from "views/subComponents/menuNav/drawerSide";
 import { useStyles } from "./aston-martini-mini.style";
 
-import TemporaryDrawer from "../subComponents/menuNav/drawerSide";
-
+ 
 export const AstonMartinMini = () => {
   const classes = useStyles();
  
@@ -38,7 +38,7 @@ export const AstonMartinMini = () => {
 
           <Grid item container className={classes.firstSubContainer}>
             <Grid item xs={4} className={classes.menuIcon}>
-              <TemporaryDrawer />
+              <TemporaryDrawer fFamily="Linux Biolinum O" />
             </Grid>
             <Grid item xs={4} className={classes.iconAston}>
               <div>

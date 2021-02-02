@@ -2,7 +2,7 @@ import { Button, Grid, InputBase, Typography } from "@material-ui/core";
 import React, { useEffect } from "react";
 import { useStyles } from "./lamborghini.style";
 import clsx from "clsx";
-import TemporaryDrawer from '../subComponents/menuNav/drawerSide';
+import {TemporaryDrawer} from '../subComponents/menuNav/drawerSide';
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -26,7 +26,7 @@ export const Lamborghini = () => {
           {/* -----------------HEADER------------------------- */}
           <Grid item container className={classes.firstSubContainer}>
             <Grid item xs={3} md={1} lg={1} className={classes.menuIcon}>
-              <TemporaryDrawer />
+              <TemporaryDrawer fFamily="Proxima Nova" />
             </Grid>
             <Grid item xs={4} lg={4} className={classes.iconAston}>
               <div>

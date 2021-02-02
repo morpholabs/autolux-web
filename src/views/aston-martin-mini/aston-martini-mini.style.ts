@@ -138,7 +138,8 @@ export const useStyles = makeStyles((theme) => {
     },
     socialMediaIcon: {
       display: "flex",
-      justifyContent: "center",
+      justifyContent: "flex-end",
+      paddingRight:"70px",
       [theme.breakpoints.down("sm")]: {
         paddingLeft: "13%",
       },
@@ -168,7 +169,8 @@ export const useStyles = makeStyles((theme) => {
       width: "30px",
       height: "28px",
       display: "flex",
-      justifyContent: "center",
+      justifyContent: "end",
+      paddingLeft:"80px"
     },
     firstSide: {
       width: "60%",
@@ -241,8 +243,12 @@ export const useStyles = makeStyles((theme) => {
       border: "1px solid",
       marginTop: "15px",
       borderRadius: "0",
-      width: "120px",
+      width: "125px",
+      height:"54px",
       "&.MuiButton-root":{
+      },
+      "& .MuiButton-label":{
+        fontSize:"18px"
       },
       [theme.breakpoints.down("sm")]: {
         width: "150px",
@@ -502,6 +508,7 @@ export const useStyles = makeStyles((theme) => {
     iconMenu: {
       fontSize:"30px",
       color:"white",
+      paddingLeft:"80px",
       [theme.breakpoints.down("xs")]: {
         fontSize:"20px",
         height:"24px"

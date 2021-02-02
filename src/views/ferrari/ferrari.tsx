@@ -4,7 +4,7 @@ import { useStyles } from "./ferrari.style";
 import clsx from "clsx";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import TemporaryDrawer from '../subComponents/menuNav/drawerSide';
+import {TemporaryDrawer} from '../subComponents/menuNav/drawerSide';
 
 interface FerrariSectionProps {
   header: string;
@@ -119,7 +119,7 @@ export const Ferrari = () => {
   return (
     <>
       <Grid container style={{ width: "100%" }} className={classes.mainContainer}>
-        {/* ------------------FIRST CONTAINER------------------------ */}
+        {/* ------------------FIRST CONTAINER----------------f-------- */}
         <Grid
           container
           
@@ -133,7 +133,7 @@ export const Ferrari = () => {
           {/* ---------HEADER------- */}
           <Grid item container className={classes.firstSubContainer}>
             <Grid item xs={3} md={1} lg={1} className={classes.menuIcon}>
-              <TemporaryDrawer fontFamily="Proxima Nova"/>
+              <TemporaryDrawer  fFamily="Red Rose"/>
             </Grid>
             <Grid item xs={4} lg={5} className={classes.iconAston}>
               <div>
