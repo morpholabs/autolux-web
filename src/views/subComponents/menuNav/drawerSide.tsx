@@ -48,7 +48,7 @@ export const TemporaryDrawer: React.FC<Props> = ({ fFamily }) => {
             <Typography
               variant="h6"
               className={classes.firstDrawerTypo}
-              style={{ fontFamily:fFamily,fontSize:25 }}
+              style={{ fontFamily:fFamily,fontSize:"22px" }}
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et
@@ -70,7 +70,7 @@ export const TemporaryDrawer: React.FC<Props> = ({ fFamily }) => {
             </Grid>
             <Typography
               style={{ color: "white", marginTop: "15px",fontFamily:fFamily }}
-              variant="h3"
+              variant="h4"
             >
               Əlaqə
             </Typography>
@@ -79,7 +79,7 @@ export const TemporaryDrawer: React.FC<Props> = ({ fFamily }) => {
               style={{ display: "flex", color: "white", marginTop: "15px" }}
             >
               <Grid item>
-                <span style={{ fontSize: "30px" }}>
+                <span style={{ fontSize: "27px" }}>
                   <i className="far fa-map-marker"></i>
                 </span>
               </Grid>
@@ -94,10 +94,10 @@ export const TemporaryDrawer: React.FC<Props> = ({ fFamily }) => {
             </Grid>
             <Grid
               container
-              style={{ display: "flex", color: "white", marginTop: "15px" }}
+              style={{ display: "flex", color: "white", marginTop: "10px" }}
             >
               <Grid item>
-                <span style={{ fontSize: "30px" }}>
+                <span style={{ fontSize: "27px" }}>
                   <i className="fal fa-phone"></i>
                 </span>
               </Grid>
